@@ -1,13 +1,3 @@
-build:
-docker build -t azure-sql-edge .   
-
-run:
-docker run --name sql-bak -p 1433:1433 -d azure-sql-edge
-
-port allocated error:
-docker container ls
-docker rm -f <container-name>
-
 ## Setup SQL Server on Mac with db restored from .bak file
 
 This project provides a docker solution allowing running SQL Server on Mac (M1, M2, M3).  
